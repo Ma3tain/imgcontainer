@@ -1,0 +1,170 @@
+
+
+proxy-providers:
+  
+  iqzone:
+    type: http
+    url: "https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fuuu.glass%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Da0817094fabd7dc939da564e1724ea44&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&filename=iqzone&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false"
+    path: ./proxy_providers/iqzone.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  flyss:
+    type: http
+    url: "https://dy.flyss.cc/sub?target=clash&url=https%3A%2F%2Fproxy.flyss.cc%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D55f505db0a7a4bc93b70be2b3a13d4fc&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&new_name=true"
+    path: ./proxy_providers/flyss.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  jms:
+    type: http
+    url: "https://dy.flyss.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fod.lk%2Fd%2Fb4772e1ad694cd744389928c0214594f8fee19c94ddc8403373b12e3b46c2d8b%2FMrtain.yml&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMa3tain%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&filename=jms&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false"
+    path: ./proxy_providers/jms.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  猫猫:
+    type: http
+    url: "https://sub.id9.cc/sub?target=clash&url=https%3A%2F%2Fapi.pinkss.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D3f842179bf5c77ad9f0c1aa475d43ee0&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&append_type=true&emoji=true&list=true&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&new_name=true"
+    path: ./proxy_providers/猫猫.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+  dogdog:
+    type: http
+    url: "https://www.nameless13.com/sub?target=clash&url=https%3A%2F%2Fv1.vmess.top%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D59625090e7abdf236da3162409096fb7&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FMeilieage%2Fwebcdn%2Fmain%2Frule%2FArea_Media_NoAuto.ini&append_type=true&emoji=true&list=true&udp=false&tfo=false&expand=true&scv=false&fdn=false&sort=false&new_name=true"
+    path: ./proxy_providers/dogdog.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  自建:
+    type: http
+    url: "https://sub.id9.cc/sub?target=clash&new_name=true&url=ss%3A%2F%2FYWVzLTI1Ni1nY206YWRtaW5zc0AxNzMuODIuMTg4LjEwNToyMDE3%7Css%3A%2F%2FYWVzLTI1Ni1nY206YWRtaW5zc0AxNTkuMjIzLjUwLjQ1OjIwMTc%3D%7Css%3A%2F%2FYWVzLTI1Ni1nY206YWRtaW5zc0Bzei5jbS54Zi5nYXk6NTU1NTY%7Css%3A%2F%2FYWVzLTI1Ni1nY206YWRtaW5zc0Bzei5jbTIueGYuZ2F5OjU1NTU2%7Css%3A%2F%2FYWVzLTI1Ni1nY206YWRtaW5zc0AxNTAuMTI5LjIxOC4xMzM6MjAxNw%7Css%3A%2F%2FYWVzLTI1Ni1nY206YWRtaW5zc0Bzei5jbS54Zi5nYXk6NTU1NTc&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false"
+    path: ./proxy_providers/自建.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+proxy-groups:
+-
+  name: Proxy
+  type: select
+  proxies:
+    - 机场组1
+    - 机场组2
+    - 机场组3
+    - 机场组4
+    - 机场组5
+    - 自建
+-
+  name: 机场组1
+  type: select
+  use:
+    - iqzone
+  filter: '^(?!.*游戏节点).*'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+-
+  name: 机场组2
+  type: select
+  use:
+    - flyss
+  filter: '^(?!.*(更新节点|IEPL|3x)).*'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+-
+  name: 机场组3
+  type: select
+  use:
+    - jms
+  #filter: '^(?!.*(更新节点|IEPL|3x)).*'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+-
+  name: 机场组4
+  type: select
+  use:
+    - 猫猫
+  #filter: '^(?!.*(更新节点|IEPL|3x)).*'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+-
+  name: 机场组5
+  type: select
+  use:
+    - dogdog
+  #filter: '^(?!.*(更新节点|IEPL|3x)).*'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+-
+  name: 自建
+  type: select
+  use:
+    - 自建
+  #filter: '^(?!.*(更新节点|IEPL|3x)).*'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+-
+  name: Domestic
+  type: select
+  proxies:
+    - DIRECT
+    - Proxy
+-
+  name: Others
+  type: select
+  proxies:
+    - Proxy
+    - Domestic
+- 
+  name: DNSg            
+  type: select     
+  proxies:
+    - Proxy
+    - Domestic
+    
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+    path: ./rule_providers/Google.yaml
+    interval: 21600
+  Local:
+    type: file
+    behavior: classical
+    path: ./rule_providers/Locale.yaml
+  applications:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
+rules:
+  - RULE-SET,reject,REJECT
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,Local,DIRECT,no-resolve
+  - RULE-SET,Google,Proxy
+  - GEOSITE,gfw,Proxy
+  - GEOIP,CN,Domestic,no-resolve
+  - GEOSITE,CN,Domestic
+  - MATCH,Proxy
